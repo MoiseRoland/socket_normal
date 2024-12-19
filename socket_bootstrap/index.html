@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocketSite - Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-dark" href="#">SocketSite-Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="socket.html">Socket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="informatica.html">Informatica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sistemi.html">Sistemi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="glossario.html">Glossario</a></li>
+                </ul>
+                <label class="switch ms-3">
+                    <input type="checkbox" id="modeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid hero-container d-flex align-items-center justify-content-center">
+        <div class="hero-card text-center py-3 px-4 rounded">
+            <h1 class="h4 fw-bold">Benvenuti su SocketSite</h1>
+            <p class="small">Una socket è un punto finale di comunicazione in una rete, identificato da un indirizzo IP e un numero di porta, che consente lo scambio di dati tra processi su macchine diverse.</p>
+            <a href="socket.html" class="btn btn-dark btn-lg">Inizia ora, cos'è una socket?</a>
+        </div>
+    </div>
+    <h2 class="text-center mt-5">Visita le altre pagine</h2> 
+
+    <div class="container-fluid main-content d-flex justify-content-evenly align-items-center flex-wrap">
+        <div class="card shadow-sm text-center col-12 col-md-4 my-3">
+            <img src="img/mysqlphp.png" class="card-img-top" alt="MySQLPHP">
+            <div class="card-body">
+                <h5 class="card-title">INFORMATICA</h5>
+                <p class="card-text small">MySQL e PHP</p>
+                <a href="informatica.htm" class="btn btn-dark btn-sm">Scopri di più</a>
+            </div>
+        </div>
+        <div class="card shadow-sm text-center col-12 col-md-4 my-3">
+            <img src="img/tcpudp.png" class="card-img-top" alt="OSI Image">
+            <div class="card-body">
+                <h5 class="card-title">SISTEMI E RETI</h5>
+                <p class="card-text small">Il modello OSI, Le differenze tra TCP/UDP, e come sono fatti.</p>
+                <a href="sistemi.html" class="btn btn-dark btn-sm">Scopri di più</a>
+            </div>
+        </div>
+        <div class="card shadow-sm text-center col-12 col-md-4 my-3">
+            <img src="img/glossario.jpg" class="card-img-top" alt="Glossario Image">
+            <div class="card-body">
+                <h5 class="card-title">GLOSSARIO</h5>
+                <p class="card-text small">Scopri quello che dicono i termini tecnici utilizzati</p>
+                <a href="glossario.html" class="btn btn-dark btn-sm">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 mt-auto">
+        <p>Copyright &copy; Creato da Moise Roland, Classe 5E.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

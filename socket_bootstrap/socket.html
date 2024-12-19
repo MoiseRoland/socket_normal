@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket - Informazioni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-dark" href="#">SocketSite-Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="socket.html">Socket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="informatica.html">Informatica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sistemi.html">Sistemi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="glossario.html">Glossario</a></li>
+                </ul>
+                <label class="switch ms-3">
+                    <input type="checkbox" id="modeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="display-4 text-center">Cos'è una Socket?</h1>
+                <p class="lead text-center">Una breve introduzione su come le socket sono utilizzate per la
+                    comunicazione tra dispositivi in rete.</p>
+            </div>
+        </div>
+        <section class="py-5 scroll-target" id="cos-e-una-socket">
+            <h2 class="text-primary section-title">Cos'è una Socket?</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Una socket è un'interfaccia di programmazione che consente a due processi, potenzialmente in
+                        esecuzione su macchine diverse, di comunicare attraverso una rete. Essa rappresenta un punto
+                        finale di comunicazione, identificato da un indirizzo IP (che indica la macchina) e un numero di
+                        porta (che identifica il servizio o l'applicazione). Le socket sono fondamentali per la
+                        comunicazione di rete, poiché forniscono le funzionalità necessarie per inviare e ricevere dati
+                        in modo strutturato, gestendo la connessione e la trasmissione delle informazioni.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/Socket-Programming.png" alt="Socket image" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </section>
+        <section class="py-5 scroll-target" id="tipologie-di-socket">
+            <h2 class="text-primary">Tipologie di Socket</h2>
+            <div class="d-flex flex-wrap" id="socket-cards">
+                <div class="card shadow-sm text-center mx-3 my-3" style="width: 20rem;">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="card-title">Stream Socket (SOCK_STREAM)</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Utilizza il protocollo TCP...</p>
+                        <ul>
+                            <li><strong>Affidabilità</strong>: Garantisce che i dati arrivino correttamente...</li>
+                            <li><strong>Connessione</strong>: Richiede una fase di handshake...</li>
+                            <li><strong>Applicazioni tipiche</strong>: Web browsing, email, FTP.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card shadow-sm text-center mx-3 my-3" style="width: 20rem;">
+                    <div class="card-header bg-warning text-white">
+                        <h5 class="card-title">Datagram Socket (SOCK_DGRAM)</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Utilizza il protocollo UDP...</p>
+                        <ul>
+                            <li><strong>Velocità</strong>: I pacchetti vengono inviati senza stabilire una
+                                connessione...</li>
+                            <li><strong>Nessuna garanzia di consegna</strong>: I pacchetti possono essere duplicati...
+                            </li>
+                            <li><strong>Applicazioni tipiche</strong>: Streaming, giochi online, VoIP.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 scroll-target" id="considerazioni-aggiuntive">
+            <h2 class="text-primary">Considerazioni Aggiuntive</h2>
+            <ul>
+                <li><strong>Error Handling</strong>: Gestire gli errori come timeout, interruzioni di rete o problemi di
+                    connessione.</li>
+                <li><strong>Sicurezza</strong>: Usare protocolli sicuri come TLS/SSL per cifrare i dati trasmessi.</li>
+                <li><strong>Scalabilità</strong>: Utilizzare tecniche come il multi-threading per gestire più
+                    connessioni simultaneamente.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer class="text-center py-4 mt-auto">
+        <p>Copyright &copy; Creato da Moise Roland, Classe 5E.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

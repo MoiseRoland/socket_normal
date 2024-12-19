@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modello OSI - Sistemi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-dark" href="#">SocketSite-Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="socket.html">Socket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="informatica.html">Informatica</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sistemi.html">Sistemi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="glossario.html">Glossario</a></li>
+                </ul>
+                <label class="switch ms-3">
+                    <input type="checkbox" id="modeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="display-4 text-center">Modello OSI e Livello di Trasporto</h1>
+                <p class="lead text-center">Una panoramica sul modello OSI e sull'importanza del livello di trasporto nelle comunicazioni di rete.</p>
+            </div>
+        </div>
+        <section class="py-5 scroll-target" id="cos-e-il-modello-osi">
+            <h2 class="text-primary section-title">Cos'è il Modello OSI?</h2>
+            <p>Il Modello OSI (Open Systems Interconnection) è un modello teorico che descrive come i dati viaggiano attraverso una rete di computer. È composto da sette livelli, ognuno dei quali ha una funzione specifica nel processo di trasmissione dei dati. Ogni livello si occupa di una parte della comunicazione tra due dispositivi e si interfaccia con i livelli superiori e inferiori per garantire una comunicazione completa ed efficiente.</p>
+        </section>
+        <section class="py-5 scroll-target" id="sette-livelli-osi">
+            <h2 class="text-primary">I Sette Livelli del Modello OSI</h2>
+            <p>Il Modello OSI si compone di sette livelli, ognuno con compiti ben definiti:</p>
+            <div class="accordion" id="accordionOSI">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            Livello 1: Fisico
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionOSI">
+                        <div class="accordion-body">
+                            Si occupa della trasmissione fisica dei dati attraverso il mezzo di comunicazione (es. cavi, fibre ottiche, onde radio).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Livello 2: Data Link
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionOSI">
+                        <div class="accordion-body">
+                            Gestisce la comunicazione tra due dispositivi nella stessa rete fisica, controllando errori e flusso.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            Livello 3: Rete
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionOSI">
+                        <div class="accordion-body">
+                            Si occupa dell'instradamento dei pacchetti di dati attraverso la rete, determinando il percorso più efficiente.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            Livello 4: Trasporto
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionOSI">
+                        <div class="accordion-body">
+                            Gestisce il trasferimento di dati tra i dispositivi di rete, assicurando che i dati siano ricevuti in modo completo e corretto.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            Livello 5: Sessione
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionOSI">
+                        <div class="accordion-body">
+                            Gestisce le sessioni di comunicazione, stabilendo, mantenendo e terminando le connessioni.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                            Livello 6: Presentazione
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionOSI">
+                        <div class="accordion-body">
+                            Si occupa della codifica e della decodifica dei dati, assicurando che siano compatibili tra le applicazioni.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                            Livello 7: Applicazione
+                        </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionOSI">
+                        <div class="accordion-body">
+                            Fornisce i servizi necessari per l'interazione diretta con l'utente, come il protocollo HTTP per la navigazione web.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 scroll-target" id="livello-di-trasporto">
+            <h2 class="text-primary">Il Livello di Trasporto</h2>
+            <p>Il <strong>livello di trasporto</strong> (Livello 4 del modello OSI) è responsabile della gestione della comunicazione tra i dispositivi di rete, assicurando che i dati vengano inviati in modo sicuro e che arrivino correttamente a destinazione. Due dei principali protocolli di trasporto sono:</p>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Protocollo TCP</h5>
+                            <p class="card-text">Il TCP (Transmission Control Protocol) è un protocollo di connessione orientata, che garantisce che i pacchetti di dati vengano ricevuti correttamente, ritrasmettendo quelli persi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/EN-tcp.png" class="img-fluid rounded" alt="Protocollo TCP">
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Protocollo UDP</h5>
+                            <p class="card-text">L'UDP (User Datagram Protocol) è un protocollo senza connessione, che non garantisce l'affidabilità, ma è più veloce del TCP. È utilizzato in applicazioni dove la velocità è cruciale.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/udp.jpg" class="img-fluid rounded" alt="Protocollo UDP">
+                </div>
+            </div>
+        </section>
+        <section class="py-5 scroll-target" id="confronto-rapido">
+            <h2 class="text-primary">Confronto rapido: TCP vs UDP</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">TCP</h4>
+                        <p>Protocolli orientati alla connessione, garantendo l'affidabilità dei dati con il controllo degli errori e la ritrasmissione.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-danger" role="alert">
+                        <h4 class="alert-heading">UDP</h4>
+                        <p>Protocollo senza connessione, che favorisce la velocità rispetto all'affidabilità, con pacchetti che possono essere persi o arrivare fuori ordine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="alert alert-warning mt-4" role="alert">
+            <strong>Nota!</strong> Il livello di trasporto è fondamentale per applicazioni come la navigazione web e la gestione delle email. Senza una comunicazione sicura e affidabile, questi servizi non potrebbero funzionare correttamente.
+        </div>
+
+    </div>
+
+    <footer class="text-center py-4 mt-auto">
+        <p>Copyright &copy; Creato da Moise Roland, Classe 5E.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

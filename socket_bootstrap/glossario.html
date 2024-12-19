@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossario - SocketSite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-dark" href="#">SocketSite-Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="socket.html">Socket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="informatica.html">Informatica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sistemi.html">Sistemi</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="glossario.html">Glossario</a></li>
+                </ul>
+                <label class="switch ms-3">
+                    <input type="checkbox" id="modeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="display-4 text-center">Glossario Tecnico</h1>
+                <p class="lead text-center">Un elenco di termini tecnici utilizzati nel sito.</p>
+            </div>
+        </div>
+        <section class="py-5">
+            <h2 class="text-primary">Termini Tecnici</h2>
+
+            <div class="accordion" id="glossarioAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSocket">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSocket" aria-expanded="true" aria-controls="collapseSocket">
+                            Socket
+                        </button>
+                    </h2>
+                    <div id="collapseSocket" class="accordion-collapse collapse show" aria-labelledby="headingSocket" data-bs-parent="#glossarioAccordion">
+                        <div class="accordion-body">
+                            Un <strong>socket</strong> è un endpoint per la comunicazione tra due programmi, che permette la trasmissione di dati su una rete. È utilizzato in contesti come la comunicazione tra client e server.
+                            <br>
+                            <a href="socket.html" class="btn btn-link">Scopri di più su Socket</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingClient">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClient" aria-expanded="false" aria-controls="collapseClient">
+                            Client
+                        </button>
+                    </h2>
+                    <div id="collapseClient" class="accordion-collapse collapse" aria-labelledby="headingClient" data-bs-parent="#glossarioAccordion">
+                        <div class="accordion-body">
+                            Il <strong>client</strong> è un programma o un dispositivo che richiede un servizio da un server, tipicamente interagendo con un'applicazione web o una rete.
+                            <br>
+                            <a href="socket.html" class="btn btn-link">Scopri di più su Client</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingServer">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServer" aria-expanded="false" aria-controls="collapseServer">
+                            Server
+                        </button>
+                    </h2>
+                    <div id="collapseServer" class="accordion-collapse collapse" aria-labelledby="headingServer" data-bs-parent="#glossarioAccordion">
+                        <div class="accordion-body">
+                            Un <strong>server</strong> è un sistema che fornisce servizi o risorse a un client. Può essere un server web, un database server o un server di posta, a seconda del tipo di servizio che offre.
+                            <br>
+                            <a href="socket.html" class="btn btn-link">Scopri di più su Server</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTCP">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTCP" aria-expanded="false" aria-controls="collapseTCP">
+                            TCP
+                        </button>
+                    </h2>
+                    <div id="collapseTCP" class="accordion-collapse collapse" aria-labelledby="headingTCP" data-bs-parent="#glossarioAccordion">
+                        <div class="accordion-body">
+                            Il <strong>TCP</strong> (Transmission Control Protocol) è un protocollo di comunicazione che garantisce la consegna affidabile dei dati tra client e server.
+                            <br>
+                            <a href="informatica.html" class="btn btn-link">Scopri di più su TCP</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingUDP">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUDP" aria-expanded="false" aria-controls="collapseUDP">
+                            UDP
+                        </button>
+                    </h2>
+                    <div id="collapseUDP" class="accordion-collapse collapse" aria-labelledby="headingUDP" data-bs-parent="#glossarioAccordion">
+                        <div class="accordion-body">
+                            L'<strong>UDP</strong> (User Datagram Protocol) è un protocollo di comunicazione che permette la trasmissione di dati in tempo reale, ma senza garanzia di consegna affidabile.
+                            <br>
+                            <a href="informatica.html" class="btn btn-link">Scopri di più su UDP</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingMySQL">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMySQL" aria-expanded="false" aria-controls="collapseMySQL">
+                            MySQL
+                        </button>
+                    </h2>
+                    <div id="collapseMySQL" class="accordion-collapse collapse" aria-labelledby="headingMySQL" data-bs-parent="#glossarioAccordion">
+                        <div class="accordion-body">
+                            <strong>MySQL</strong> è un sistema di gestione di database relazionali open-source. Viene comunemente utilizzato per archiviare e gestire i dati in applicazioni web.
+                            <br>
+                            <a href="informatica.html" class="btn btn-link">Scopri di più su MySQL</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingPHP">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePHP" aria-expanded="false" aria-controls="collapsePHP">
+                            PHP
+                        </button>
+                    </h2>
+                    <div id="collapsePHP" class="accordion-collapse collapse" aria-labelledby="headingPHP" data-bs-parent="#glossarioAccordion">
+                        <div class="accordion-body">
+                            <strong>PHP</strong> è un linguaggio di programmazione server-side ampiamente utilizzato per lo sviluppo di applicazioni web dinamiche. È spesso usato in combinazione con MySQL per la gestione dei dati.
+                            <br>
+                            <a href="informatica.html" class="btn btn-link">Scopri di più su PHP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="text-center py-4 mt-auto">
+      <p>Copyright &copy; Creato da Moise Roland, Classe 5E.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
